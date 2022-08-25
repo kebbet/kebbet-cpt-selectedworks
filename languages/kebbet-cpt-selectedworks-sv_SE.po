@@ -1,0 +1,281 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Kebbet plugins - Custom Post Type: Selected works\n"
+"POT-Creation-Date: 2022-08-25 14:32+0200\n"
+"PO-Revision-Date: 2022-08-25 14:32+0200\n"
+"Last-Translator: Erik Betshammar <info@verkan.se>\n"
+"Language-Team: Erik Betshammar <info@verkan.se>\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: kebbet-cpt-selectedworks.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: inc/admin-columns.php:41 kebbet-cpt-selectedworks.php:90
+msgid "Post image"
+msgstr "Inläggets bild"
+
+#: inc/admin-columns.php:66
+msgid "No image is set."
+msgstr "Ingen bild har ställts in."
+
+#: inc/admin-messages.php:30 inc/admin-messages.php:33
+msgid "Post updated."
+msgstr "Inlägget uppdaterades."
+
+#: inc/admin-messages.php:31
+msgid "Custom field updated."
+msgstr "Anpassat fält uppdaterat."
+
+#: inc/admin-messages.php:32
+msgid "Custom field deleted."
+msgstr "Anpassat fält borttaget."
+
+#. translators: %s: date and time of the revision
+#: inc/admin-messages.php:35
+#, php-format
+msgid "Post restored to revision from %s"
+msgstr "Inlägget har återställts till version från %s"
+
+#: inc/admin-messages.php:36
+msgid "Post published."
+msgstr "Inlägget publicerat."
+
+#: inc/admin-messages.php:37
+msgid "Post saved."
+msgstr "Inlägget sparat."
+
+#: inc/admin-messages.php:38
+msgid "Post submitted."
+msgstr "Inlägget inlagt."
+
+#. translators: %1$s: date and time of the scheduled post
+#: inc/admin-messages.php:41
+#, php-format
+msgid "Post scheduled for: <strong>%1$s</strong>."
+msgstr "Inlägget är schemalagt till: <strong>%1$s</strong>."
+
+#: inc/admin-messages.php:42
+msgid "M j, Y @ G:i"
+msgstr "Y M D @ H:i"
+
+#: inc/admin-messages.php:44
+msgid "Post draft updated."
+msgstr "Utkast uppdaterades."
+
+#: inc/admin-messages.php:51 kebbet-cpt-selectedworks.php:85
+msgid "View post"
+msgstr "Visa inlägg"
+
+#: inc/admin-messages.php:57
+msgid "Preview post"
+msgstr "Förhandsgranska inlägg"
+
+#. translators: %s: singular of posts, %$s: plural of posts.
+#: inc/admin-messages.php:80
+#, php-format
+msgid "%s post updated."
+msgid_plural "%s posts updated."
+msgstr[0] "%s inlägg har uppdaterats."
+msgstr[1] "%s inlägg har uppdaterats."
+
+#. translators: %s: singular of posts, %$s: plural of posts.
+#: inc/admin-messages.php:82
+#, php-format
+msgid "%s post not updated, somebody is editing it."
+msgid_plural "%s posts not updated, somebody is editing them."
+msgstr[0] "%s inlägg uppdaterades inte, någon redigerar det."
+msgstr[1] "%s inlägg uppdaterades inte, någon redigerar dem."
+
+#. translators: %s: singular of posts, %$s: plural of posts.
+#: inc/admin-messages.php:84
+#, php-format
+msgid "%s post permanently deleted."
+msgid_plural "%s posts permanently deleted."
+msgstr[0] "%s inlägg togs bort permanent."
+msgstr[1] "%s inlägg togs bort permanent."
+
+#. translators: %s: singular of posts, %$s: plural of posts.
+#: inc/admin-messages.php:86
+#, php-format
+msgid "%s post moved to the Trash."
+msgid_plural "%s posts moved to the Trash."
+msgstr[0] "%s inlägg flyttades till papperskorgen."
+msgstr[1] "%s inlägg flyttades till papperskorgen."
+
+#. translators: %s: singular of posts, %$s: plural of posts.
+#: inc/admin-messages.php:88
+#, php-format
+msgid "%s post restored from the Trash."
+msgid_plural "%s posts restored from the Trash."
+msgstr[0] "%s inlägg återställdes från papperskorgen."
+msgstr[1] "%s inlägg återställdes från papperskorgen."
+
+#. translators: %s: counter of how many posts.
+#: inc/at-a-glance.php:34
+#, php-format
+msgid "%s selected work post"
+msgid_plural "%s selected work posts"
+msgstr[0] "%s inlägg för verk i urval"
+msgstr[1] "%s inlägg för verk i urval"
+
+#: inc/options-page.php:20 inc/options-page.php:21
+msgid "Selected work settings"
+msgstr "Inställningar för verk i urval"
+
+#: kebbet-cpt-selectedworks.php:75
+msgctxt "Post Type General Name"
+msgid "Selected works"
+msgstr "Verk i urval"
+
+#: kebbet-cpt-selectedworks.php:76
+msgctxt "Post Type Singular Name"
+msgid "Selected work"
+msgstr "Verk i urval"
+
+#: kebbet-cpt-selectedworks.php:77
+msgctxt "Menu name"
+msgid "Selected works"
+msgstr "Verk i urval"
+
+#: kebbet-cpt-selectedworks.php:78
+msgid "Work"
+msgstr "Verk"
+
+#: kebbet-cpt-selectedworks.php:79
+msgid "All posts"
+msgstr "Alla inlägg"
+
+#: kebbet-cpt-selectedworks.php:80 kebbet-cpt-selectedworks.php:82
+msgid "New post"
+msgstr "Nytt inlägg"
+
+#: kebbet-cpt-selectedworks.php:81
+msgid "Add new post"
+msgstr "Lägg till nytt inlägg"
+
+#: kebbet-cpt-selectedworks.php:83
+msgid "Edit post"
+msgstr "Redigera inlägg"
+
+#: kebbet-cpt-selectedworks.php:84
+msgid "Update post"
+msgstr "Uppdatera inlägg"
+
+#: kebbet-cpt-selectedworks.php:86
+msgid "View posts"
+msgstr "Visa inlägg"
+
+#: kebbet-cpt-selectedworks.php:87
+msgid "Search posts"
+msgstr "Sök inlägg"
+
+#: kebbet-cpt-selectedworks.php:88
+msgid "Not found"
+msgstr "Hittade inga inlägg"
+
+#: kebbet-cpt-selectedworks.php:89
+msgid "No posts found in Trash"
+msgstr "Inga inlägg hittades i papperskorgen"
+
+#: kebbet-cpt-selectedworks.php:91
+msgid "Set post image"
+msgstr "Ställ in inläggsbild"
+
+#: kebbet-cpt-selectedworks.php:92
+msgid "Remove post image"
+msgstr "Ta bort inläggsbild"
+
+#: kebbet-cpt-selectedworks.php:93
+msgid "Use as post image"
+msgstr "Använd som inläggsbild"
+
+#: kebbet-cpt-selectedworks.php:94
+msgid "Insert into item"
+msgstr "Infoga till inlägg"
+
+#: kebbet-cpt-selectedworks.php:95
+msgid "Uploaded to this post"
+msgstr "Uppladdad till detta inlägg"
+
+#: kebbet-cpt-selectedworks.php:96
+msgid "Items list"
+msgstr "Objektlista"
+
+#: kebbet-cpt-selectedworks.php:97
+msgid "Items list navigation"
+msgstr "Navigering för objektlista"
+
+#: kebbet-cpt-selectedworks.php:98
+msgid "Filter items list"
+msgstr "Filtrera objektlista"
+
+#: kebbet-cpt-selectedworks.php:99
+msgid "Post published"
+msgstr "Inlägget publicerat"
+
+#: kebbet-cpt-selectedworks.php:100
+msgid "Post published privately"
+msgstr "Inlägget publicerades privat"
+
+#: kebbet-cpt-selectedworks.php:101
+msgid "Post reverted to Draft"
+msgstr "Inlägget återställdes till utkast"
+
+#: kebbet-cpt-selectedworks.php:102
+msgid "Post scheduled"
+msgstr "Inlägget schemalagt"
+
+#: kebbet-cpt-selectedworks.php:103
+msgid "Post updated"
+msgstr "Inlägget uppdaterades"
+
+#: kebbet-cpt-selectedworks.php:105
+msgid "Filter posts by date"
+msgstr "Filtrera inlägg efter datum"
+
+#: kebbet-cpt-selectedworks.php:106
+msgid "Posts link"
+msgstr "Inläggslänk"
+
+#: kebbet-cpt-selectedworks.php:107
+msgid "A link to a selected work post"
+msgstr "En länk till ett inlägg för verk i urval"
+
+#: kebbet-cpt-selectedworks.php:121
+msgid "Selected works post type"
+msgstr "Inläggstyp ”Verk i urval”"
+
+#: kebbet-cpt-selectedworks.php:122
+msgid "Custom post type for selected works"
+msgstr "Anpassad inläggstyp för utvalda verk"
+
+#. Plugin Name of the plugin/theme
+msgid "Kebbet plugins - Custom Post Type: Selected works"
+msgstr "Kebbet plugins - Anpassad posttyp: Verk i urval"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/kebbet/kebbet-cpt-selectedworks"
+msgstr "https://github.com/kebbet/kebbet-cpt-selectedworks"
+
+#. Description of the plugin/theme
+msgid "Registers a Custom Post Type."
+msgstr "Registrerar en anpassad inläggstyp."
+
+#. Author of the plugin/theme
+msgid "Erik Betshammar"
+msgstr "Erik Betshammar"
+
+#. Author URI of the plugin/theme
+msgid "https://verkan.se"
+msgstr "https://verkan.se"
