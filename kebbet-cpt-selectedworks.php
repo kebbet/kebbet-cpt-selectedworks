@@ -19,7 +19,6 @@ const SLUG        = 'works';
 const ICON        = 'format-image';
 const MENUPOS     = 29;
 const THUMBNAIL   = true;
-const ARCHIVE_OPT = false;
 
 /**
  * Link to ICONS
@@ -75,7 +74,7 @@ function register() {
 		'name'                     => _x( 'Selected works', 'Post Type General Name', 'kebbet-cpt-selectedworks' ),
 		'singular_name'            => _x( 'Selected work', 'Post Type Singular Name', 'kebbet-cpt-selectedworks' ),
 		'menu_name'                => _x( 'Selected works', 'Menu name', 'kebbet-cpt-selectedworks' ),
-		'name_admin_bar'           => __( 'Work', 'kebbet-cpt-selectedworks' ),
+		'name_admin_bar'           => __( 'Selected work post', 'kebbet-cpt-selectedworks' ),
 		'all_items'                => __( 'All posts', 'kebbet-cpt-selectedworks' ),
 		'add_new_item'             => __( 'New post', 'kebbet-cpt-selectedworks' ),
 		'add_new'                  => __( 'Add new post', 'kebbet-cpt-selectedworks' ),
@@ -117,6 +116,12 @@ function register() {
 		$supports_args = array_merge( $supports_args, array( 'thumbnail' ) );
 	}
 
+	$rewrite_args      = array(
+		'slug'       => SLUG,
+		'with_front' => false,
+		'pages'      => false,
+		'feeds'      => true,
+	);
 	$capabilities_args = \cpt\kebbet\selectedworks\roles\capabilities();
 	$post_type_args    = array(
 		'label'               => __( 'Selected works post type', 'kebbet-cpt-selectedworks' ),
@@ -124,19 +129,19 @@ function register() {
 		'labels'              => $labels_args,
 		'supports'            => $supports_args,
 		'taxonomies'          => array(),
-		'hierarchical'        => false,
+		'hierarchical'        => true,
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
 		'menu_position'       => MENUPOS,
 		'menu_icon'           => 'dashicons-' . ICON,
 		'show_in_admin_bar'   => true,
-		'show_in_nav_menus'   => false,
+		'show_in_nav_menus'   => true,
 		'can_export'          => true,
 		'has_archive'         => false,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
-		'rewrite'             => false,
+		'rewrite'             => $rewrite_args,
 		'capabilities'        => $capabilities_args,
 		// 'template'            => array( array( 'core/quote', array( 'className' => 'is-egg' ) ) ),
 		'template_lock'       => 'all',
@@ -183,10 +188,3 @@ require_once plugin_dir_path( __FILE__ ) . 'inc/admin-messages.php';
  * Adjust roles and capabilities for post type
  */
 require_once plugin_dir_path( __FILE__ ) . 'inc/roles.php';
-
-if ( true === ARCHIVE_OPT ) {
-	/**
-	 * Adds options page.
-	 */
-	require_once plugin_dir_path( __FILE__ ) . 'inc/options-page.php';
-}

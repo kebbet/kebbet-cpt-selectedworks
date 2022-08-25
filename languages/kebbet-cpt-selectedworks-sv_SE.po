@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kebbet plugins - Custom Post Type: Selected works\n"
-"POT-Creation-Date: 2022-08-25 14:32+0200\n"
-"PO-Revision-Date: 2022-08-25 14:32+0200\n"
+"POT-Creation-Date: 2022-08-25 15:04+0200\n"
+"PO-Revision-Date: 2022-08-25 15:04+0200\n"
 "Last-Translator: Erik Betshammar <info@verkan.se>\n"
 "Language-Team: Erik Betshammar <info@verkan.se>\n"
 "Language: sv_SE\n"
@@ -149,8 +149,8 @@ msgid "Selected works"
 msgstr "Verk i urval"
 
 #: kebbet-cpt-selectedworks.php:78
-msgid "Work"
-msgstr "Verk"
+msgid "Selected work post"
+msgstr "Verk i urval-inlägg"
 
 #: kebbet-cpt-selectedworks.php:79
 msgid "All posts"
@@ -252,11 +252,11 @@ msgstr "Inläggslänk"
 msgid "A link to a selected work post"
 msgstr "En länk till ett inlägg för verk i urval"
 
-#: kebbet-cpt-selectedworks.php:121
+#: kebbet-cpt-selectedworks.php:128
 msgid "Selected works post type"
 msgstr "Inläggstyp ”Verk i urval”"
 
-#: kebbet-cpt-selectedworks.php:122
+#: kebbet-cpt-selectedworks.php:129
 msgid "Custom post type for selected works"
 msgstr "Anpassad inläggstyp för utvalda verk"
 
@@ -279,3 +279,6 @@ msgstr "Erik Betshammar"
 #. Author URI of the plugin/theme
 msgid "https://verkan.se"
 msgstr "https://verkan.se"
+
+#~ msgid "Work"
+#~ msgstr "Verk"
