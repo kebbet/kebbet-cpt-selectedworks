@@ -130,7 +130,7 @@ function register() {
 		'supports'            => $supports_args,
 		'taxonomies'          => array(),
 		'hierarchical'        => true,
-		'public'              => true,
+		'public'              => false,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
 		'menu_position'       => MENUPOS,
@@ -140,10 +140,10 @@ function register() {
 		'can_export'          => true,
 		'has_archive'         => false,
 		'exclude_from_search' => false,
-		'publicly_queryable'  => true,
+		'publicly_queryable'  => false,
 		'rewrite'             => $rewrite_args,
 		'capabilities'        => $capabilities_args,
-		// 'template'            => array( array( 'core/quote', array( 'className' => 'is-egg' ) ) ),
+		// 'template'            => array( array( 'core/quote', array( 'className' => 'is-selected-work' ) ) ),
 		'template_lock'       => 'all',
 		// Adding map_meta_cap will map the meta correctly.
 		'show_in_rest'        => true,
@@ -168,6 +168,11 @@ function enqueue_scripts( $page ) {
 		wp_enqueue_style( POSTTYPE . '_scripts', plugin_dir_url( __FILE__ ) . 'assets/css/style.css', array(), '1.2.0' );
 	}
 }
+
+/**
+ * Add the fields.
+ */
+require_once plugin_dir_path( __FILE__ ) . 'inc/acf-fields.php';
 
 /**
  * Add the content to the `At a glance`-widget.
