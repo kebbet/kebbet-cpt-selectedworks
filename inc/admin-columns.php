@@ -57,7 +57,7 @@ function populate_custom_columns( $column, $post_id ) {
 			$post_id,
 			'thumbnail',
 			array(
-				'style' => 'width:100%;max-width:200px;height: auto',
+				'style' => 'width:100%;max-width:200px;height:auto;',
 			)
 		);
 		if ( $thumbnail ) {

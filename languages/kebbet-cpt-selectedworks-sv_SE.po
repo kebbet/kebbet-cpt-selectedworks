@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kebbet plugins - Custom Post Type: Selected works\n"
-"POT-Creation-Date: 2022-08-25 15:04+0200\n"
-"PO-Revision-Date: 2022-08-25 15:06+0200\n"
+"POT-Creation-Date: 2022-08-29 13:05+0200\n"
+"PO-Revision-Date: 2022-08-29 13:05+0200\n"
 "Last-Translator: Erik Betshammar <info@verkan.se>\n"
 "Language-Team: Erik Betshammar <info@verkan.se>\n"
 "Language: sv_SE\n"
@@ -21,13 +21,17 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
+#: inc/acf-fields.php:14
+msgid "Relation to project"
+msgstr "Relation till projekt"
+
 #: inc/admin-columns.php:41 kebbet-cpt-selectedworks.php:89
 msgid "Post image"
 msgstr "Inläggets bild"
 
 #: inc/admin-columns.php:66
 msgid "No image is set."
-msgstr "Ingen bild har ställts in."
+msgstr "Ingen bild har angetts."
 
 #: inc/admin-messages.php:30 inc/admin-messages.php:33
 msgid "Post updated."
@@ -186,7 +190,7 @@ msgstr "Inga inlägg hittades i papperskorgen"
 
 #: kebbet-cpt-selectedworks.php:90
 msgid "Set post image"
-msgstr "Ställ in inläggsbild"
+msgstr "Ange inläggsbild"
 
 #: kebbet-cpt-selectedworks.php:91
 msgid "Remove post image"
