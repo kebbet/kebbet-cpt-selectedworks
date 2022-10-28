@@ -2,3 +2,27 @@
 #dashboard_right_now li.selected-works-count a::before {
 	content: "\f128";
 }
+
+body.post-type-selected-works .wp-list-table .column-thumbnail {
+	width: 150px;
+}
+@media screen and (max-width: 782px) { body.post-type-selected-works .wp-list-table .column-thumbnail { 
+	display: none;
+}}
+body.post-type-selected-works .wp-list-table .column-thumbnail img {
+	max-width: 150px;
+	width: 100%;
+	height: auto;
+}
+@media screen and (max-width: 782px) { body.post-type-selected-works .wp-list-table .column-thumbnail img { 
+	max-width: none;
+}}
+/* Hide the ugly column label. */
+body.post-type-selected-works .wp-list-table tr:not(.inline-edit-row):not(.no-items) .column-thumbnail:not(.column-primary)::before {
+	display: none;
+}
+
+body.post-type-selected-works .fixed .manage-column.column-modified,
+body.post-type-selected-works .fixed .manage-column.column-date {
+	width: 15%
+}

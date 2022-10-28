@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kebbet plugins - Custom Post Type: Selected works\n"
-"POT-Creation-Date: 2022-08-29 13:05+0200\n"
-"PO-Revision-Date: 2022-08-29 13:05+0200\n"
+"POT-Creation-Date: 2022-10-28 11:06+0200\n"
+"PO-Revision-Date: 2022-10-28 11:06+0200\n"
 "Last-Translator: Erik Betshammar <info@verkan.se>\n"
 "Language-Team: Erik Betshammar <info@verkan.se>\n"
 "Language: sv_SE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: kebbet-cpt-selectedworks.php\n"
@@ -25,11 +25,15 @@ msgstr ""
 msgid "Relation to project"
 msgstr "Relation till projekt"
 
-#: inc/admin-columns.php:41 kebbet-cpt-selectedworks.php:89
+#: inc/admin-columns.php:40
+msgid "Last modified"
+msgstr "Senast ändrat"
+
+#: inc/admin-columns.php:42 kebbet-cpt-selectedworks.php:89
 msgid "Post image"
 msgstr "Inläggets bild"
 
-#: inc/admin-columns.php:66
+#: inc/admin-columns.php:71
 msgid "No image is set."
 msgstr "Ingen bild har angetts."
 

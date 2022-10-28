@@ -164,7 +164,7 @@ function enqueue_scripts( $page ) {
 	$assets_pages = array(
 		'index.php',
 	);
-	if ( in_array( $page, $assets_pages, true ) ) {
+	if ( in_array( $page, $assets_pages, true ) || 'edit-' . POSTTYPE === get_current_screen()->id ) {
 		wp_enqueue_style( POSTTYPE . '_scripts', plugin_dir_url( __FILE__ ) . 'assets/css/style.css', array(), '1.2.0' );
 	}
 }

@@ -37,6 +37,7 @@ add_filter( 'manage_' . POSTTYPE . '_posts_columns', __NAMESPACE__ . '\column_or
  * @param array $columns The existing columns.
  */
 function set_admin_column_list( $columns ) {
+	$columns['modified']  = __( 'Last modified', 'kebbet-cpt-selectedworks' );
 	if ( true === THUMBNAIL ) {
 		$columns['thumbnail'] = __( 'Post image', 'kebbet-cpt-selectedworks' );
 	}
@@ -51,14 +52,18 @@ add_filter( 'manage_' . POSTTYPE . '_posts_columns', __NAMESPACE__ . '\set_admin
  * @param int    $post_id The post ID for the row.
  */
 function populate_custom_columns( $column, $post_id ) {
-	
+	if ( 'modified' === $column ) {
+		$format   = get_option( 'date_format' ) . ' ' . get_option( 'time_format' );
+		$modified = get_the_modified_date( $format );
+		if ( $modified ) {
+			echo esc_html( $modified );
+		}
+	}
 	if ( 'thumbnail' === $column && true === THUMBNAIL ) {
 		$thumbnail = get_the_post_thumbnail(
 			$post_id,
 			'thumbnail',
-			array(
-				'style' => 'width:100%;max-width:200px;height:auto;',
-			)
+			array()
 		);
 		if ( $thumbnail ) {
 			echo $thumbnail;
@@ -69,10 +74,13 @@ function populate_custom_columns( $column, $post_id ) {
 }
 add_action( 'manage_' . POSTTYPE . '_posts_custom_column', __NAMESPACE__ . '\populate_custom_columns', 10, 2 );
 
-function column_widths() {
-	global $current_screen;
-    if ( 'edit-' . POSTTYPE === $current_screen->id && true === THUMBNAIL ) {
-        ?><style type="text/css">.manage-column.column-thumbnail,.fixed .manage-column.column-date {width:28%}</style><?php
-    }
+/**
+ * Make additional admin column sortable.
+ *
+ * @param array $columns The existing columns.
+ */
+function define_admin_sortable_columns( $columns ) {
+	$columns['modified'] = 'modified';
+	return $columns;
 }
-add_action( 'admin_head', __NAMESPACE__ . '\column_widths');
+add_filter( 'manage_edit-' . POSTTYPE . '_sortable_columns', __NAMESPACE__ . '\define_admin_sortable_columns' );
